@@ -2,6 +2,7 @@ import type { Plugin } from "vite";
 import { configAutoImportPlugin } from './plugin/autoimport';
 import { configComponentsPlugin } from './plugin/components';
 import { configPagesPlugin } from './plugin/pages';
+import { configUnocssPlugin } from './plugin/unocss';
 import vue from "@vitejs/plugin-vue";
 
 
@@ -15,6 +16,8 @@ export function createVitePlugins(isBuild: boolean, env) {
   vitePlugins.push(configComponentsPlugin());
   // 路由页面导入
   vitePlugins.push(configPagesPlugin());
+  // unocss
+  vitePlugins.push(configUnocssPlugin());
 
   return vitePlugins;
 }
