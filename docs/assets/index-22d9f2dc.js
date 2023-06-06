@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as t,F as c,a as e}from"./index-984db8fb.js";const a={},o=e("div",null,"pagename: index",-1),r=e("div",{class:"m-5"},"unocss test",-1);function _(d,i){return n(),t(c,null,[o,r],64)}const m=s(a,[["render",_]]);export{m as default};
