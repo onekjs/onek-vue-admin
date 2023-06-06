@@ -5,7 +5,7 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-    "types": ["node", "vite-plugin-pages/client"],
+    "types": ["node"],
     "paths": {
       "@/*": ["./src/*"],
       "@/view/*": ["./src/views/*"]
@@ -32,6 +32,7 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "vite.config.ts",
+    "typed-router.d.ts",
     "./auto-imports.d.ts"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]

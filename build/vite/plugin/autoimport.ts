@@ -1,4 +1,5 @@
 import AutoImport from "unplugin-auto-import/vite";
+import { VueRouterAutoImports } from 'unplugin-vue-router';
 
 export function configAutoImportPlugin() {
   return AutoImport({
@@ -7,7 +8,7 @@ export function configAutoImportPlugin() {
     imports: [
       // 插件预设支持导入的api
       "vue",
-      "vue-router",
+      VueRouterAutoImports,
       "pinia",
       // 自定义导入的api
     ],

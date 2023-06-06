@@ -1,12 +1,12 @@
 import type { Plugin } from "vite";
 import { configAutoImportPlugin } from './plugin/autoimport';
 import { configComponentsPlugin } from './plugin/components';
-import { configPagesPlugin } from './plugin/pages';
+import { configAutoRouterPlugin } from './plugin/autorouter';
 import { configUnocssPlugin } from './plugin/unocss';
 import vue from "@vitejs/plugin-vue";
 
 
-export function createVitePlugins(isBuild: boolean, env) {
+export function createVitePlugins() {
   const vitePlugins: (Plugin | Plugin[])[] = [
     vue(),
   ];
@@ -14,8 +14,8 @@ export function createVitePlugins(isBuild: boolean, env) {
   vitePlugins.push(configAutoImportPlugin());
   // vue组件导入
   vitePlugins.push(configComponentsPlugin());
-  // 路由页面导入
-  vitePlugins.push(configPagesPlugin());
+  // 文件路由
+  vitePlugins.push(configAutoRouterPlugin());
   // unocss
   vitePlugins.push(configUnocssPlugin());
 
