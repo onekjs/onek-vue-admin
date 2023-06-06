@@ -5,10 +5,10 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-    "types": ["node"],
+    "types": ["node", "vite-plugin-pages/client"],
     "paths": {
       "@/*": ["./src/*"],
-      "@view/*": ["./src/views/*"]
+      "@/view/*": ["./src/views/*"]
     },
 
     /* Bundler mode */
